@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .capacitacao import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('desafio/', views.index ),
 ]
